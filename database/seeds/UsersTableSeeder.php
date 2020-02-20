@@ -18,6 +18,7 @@ class UsersTableSeeder extends Seeder
         $user = new User();
         $user->name = 'user1';
         $user->email = 'user1@example.com';
+        $user->avatar = '/images/avatar-deafult.jpg';
         $user->password = bcrypt('123');
         $user->save();
         $user->roles()->attach($role);
@@ -25,6 +26,7 @@ class UsersTableSeeder extends Seeder
         $user = new User();
         $user->name = 'user2';
         $user->email = 'user2@example.com';
+        $user->avatar = '/images/avatar-deafult.jpg';
         $user->password = bcrypt('123');
         $user->save();
         $user->roles()->attach(2);
@@ -32,6 +34,7 @@ class UsersTableSeeder extends Seeder
         $user = new User();
         $user->name = 'user3';
         $user->email = 'user3@example.com';
+        $user->avatar = '/images/avatar-deafult.jpg';
         $user->password = bcrypt('123');
         $user->save();
         $user->roles()->attach(3);

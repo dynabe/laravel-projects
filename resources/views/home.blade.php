@@ -17,6 +17,8 @@
 
                     You are logged in!
 
+                    <img src="{{ asset(Auth::user()->avatar)}}">
+
                     <a class="dropdown-item" href="http://localhost/laravel2/public/logout" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         Logout
